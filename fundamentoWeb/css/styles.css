@@ -1,38 +1,38 @@
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
+/* estilisação do menu */
+
+#menu li{ /* estilizando o menu */
+  display: inline;
+  padding: 15px;
   
-  li {
-    float: left;
-  }
   
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
   
-  /* Change the link color to #111 (black) on hover */
-  li a:hover {
-    background-color: #111;
-  }
+}
+
+
+#menu li a{ /* estilização em camadas, texto dentro de li = a */
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  
+}
+
+#menu li a:hover{ /* Quando passar o mouse por cima*/
+  color: darkgreen;
+  font-size: 25px;
+  
+}
+
+/* estilisação do index.html */
 
   .container{
     display: flex;
     flex-flow: row;
-    justify-content: flex-start;
-    
-    
+    justify-content: center;
+    align-items: center;
     
   }
 
-  h1{
+  .hi1{
     margin-left: 10px;
   }
 
@@ -40,14 +40,86 @@ ul {
     align-items: center;
     font-size: 20px;
     margin-left: 10px;
-    width: 550px;
+    width: 690px;
     
   }
 
-  iframe{
-    width: 250px;
-    height: 250px;
-  }
+
   
- 
+
+  .br-50{
+    border-radius: 50%;
+  }
+
+  .p-30{
+    padding: 30px;
+  }
+
+  /* estilisação do Contato.html */
+
+  #iframe-ct{
+    width: 500px;
+    height: 300px;
+    
+  }
+
+  .hs1{
+    text-align: center;
+  }
+
+  .containerSobre {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+    
+  }
+
+  .containerSobre form {
+    flex-direction: column;
+    display: flex;
+    width: 500px;
+    
+  }
+
+  .containerSobre [type=text]{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px 0px 15px 0px;
+    
+
+  }
+
+  .containerSobre [type=text]:focus{ 
+    background-color: lightgrey;
+
+  }
+
+  .containerSobre [type=email]{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px 0px 15px 0px;
+
+  }
+
+  .containerSobre [type=email]:focus{ 
+    background-color: lightgrey;
+
+  }
+
+  .containerSobre [type=submit]{
+    width: 50px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 15px 0px 15px 0px;
+
+  }
+
+  
+
+
+
+
 
